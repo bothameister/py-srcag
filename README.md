@@ -66,10 +66,11 @@ You don't want to write this by hand. Roughly: The variables are replaced with a
 
 # Restrictions
 The SRCG parser makes the following restrictions:
+
 1. Rules can only have one or two symbols on the right-hand side. (This is a restriction the original adaptor grammar code did not have, but introducing it made the extensions simpler.)
 2. Terminal symbols are only handled in unary CFG rules like the one given earlier. Terminal symbols should not appear in non-CFG rules.
 3. The number of arguments on a left-hand side non-terminal symbol is **at most 5** (e.g.  `A(a,b,c,d,e) --> ...`).
-4. The total arguments across both right-hand side non-terminal symbols is **at most 9* and the symbol with higher arity should come first (e.g. `A(abcdefghi) --> B(a,c,e,g,i) C(b,d,f,h)`).
+4. The total arguments across both right-hand side non-terminal symbols is **at most 9** and the symbol with higher arity should come first (e.g. `A(abcdefghi) --> B(a,c,e,g,i) C(b,d,f,h)`).
 5. Concatenation of variables within a LHS argument is limited. In a binary rule, all the variables should combine into a single argument (example in (4.)) or remain as one variable per argument (example in 3.). Partial concatenation of variables is only allowed for unary rules, e.g.  `A(xy,z) -> B(x,y,z)` and `A(x,yz) -> B(x,y,z)` are allowed, but `A(xy,z) -> B(x,z), C(y)` is not.
 6. (There may be other subtle restrictions, but you could determine that from the code or expect the program to misbehave or warn you if they are violated.)
 
