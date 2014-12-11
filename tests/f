@@ -1,0 +1,10 @@
+1 1 S(abxyz) --> X3(a,x,z) X2(b,y) 
+X3(a,x,y) --> X2(a,x) C(y)
+1 1 X2(x,y) --> C(x) C(y)
+1 1 X2(x,y) --> Cd(x) C(y)
+1 1 Cd(xy) --> C(x) C(y)
+1 1 C(a) --> eps
+1 1 C(b) --> eps
+1 1 C(c) --> eps
+1 1 C(d) --> eps
+1 1 C(e) --> eps

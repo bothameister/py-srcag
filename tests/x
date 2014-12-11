@@ -1,0 +1,7 @@
+1 1 S(xy) --> Y(x,y)
+Y(x,yz) --> X(x,y,z)
+1 1 X(x,y,z) --> X(x,y) C(z)
+1 1 X(x,y) --> A(x) B(y)
+1 1 A(a) --> eps
+1 1 B(b) --> eps
+1 1 C(c) --> eps

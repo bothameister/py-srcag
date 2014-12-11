@@ -1,0 +1,12 @@
+1 1 S(abpyzq) --> Xprime(a,p,z) X3(b,y,q)
+1 1 Xprime(a,px,z) --> X4(a,p,x,z)
+X4(a,x,y,z) --> X3(a,x,y) C(z)
+X3(a,x,y) --> X2(a,x) C(y)
+1 1 X2(x,y) --> C(x) C(y)
+1 1 C(a) --> eps
+1 1 C(b) --> eps
+1 1 C(c) --> eps
+1 1 C(d) --> eps
+1 1 C(e) --> eps
+1 1 C(f) --> eps
+1 1 C(g) --> eps

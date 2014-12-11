@@ -1,0 +1,12 @@
+1 1 S(abpyz) --> Xprime(a,p,z) X2(b,y) 
+#1 1 S(abpxyz) --> X4(a,p,x,z) X2(b,y) 
+1 1 Xprime(a,xy,z) --> X4(a,x,y,z)
+X4(a,x,y,z) --> X3(a,x,y) C(z)
+X3(a,x,y) --> X2(a,x) C(y)
+1 1 X2(x,y) --> C(x) C(y)
+1 1 C(a) --> eps
+1 1 C(b) --> eps
+1 1 C(c) --> eps
+1 1 C(d) --> eps
+1 1 C(e) --> eps
+1 1 C(f) --> eps

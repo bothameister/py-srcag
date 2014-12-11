@@ -1,0 +1,6 @@
+1 1 S(xyz) --> X(x,y,z)
+Y(x,y) --> A(x) B(y) # test yield: S(a b c) ( X(a,b,c) ( Y(a,b) (A(a) B(b) ) C(c) ) )
+X(x,y,z) --> Y(x,y) C(z)
+1 1 A(a) --> eps
+1 1 B(b) --> eps
+1 1 C(c) --> eps

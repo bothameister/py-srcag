@@ -1,0 +1,7 @@
+Obtained these files from: https://svn.boost.org/trac/boost/ticket/5265
+
+Commented out their inclusion of 'tr1/unordered_map' as that gave clashes with main program.
+
+-JAB 21/3/2013
+
+Compile with g++ -I. (from the directory containing this boost dir)

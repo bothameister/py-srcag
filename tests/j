@@ -1,0 +1,14 @@
+1 1 S(sabpxyzqc) --> X5(s,b,x,z,c) X4(a,p,y,q)
+X5(a,x,y,c,z) --> X4(a,x,y,c) C(z)
+X4(a,x,y,z) --> X3(a,x,y) C(z)
+X3(a,x,y) --> X2(a,x) C(y)
+1 1 X2(x,y) --> C(x) C(y)
+1 1 C(a) --> eps
+1 1 C(b) --> eps
+1 1 C(c) --> eps
+1 1 C(d) --> eps
+1 1 C(e) --> eps
+1 1 C(f) --> eps
+1 1 C(g) --> eps
+1 1 C(h) --> eps
+1 1 C(i) --> eps

@@ -1,0 +1,15 @@
+1 1 S(xy) --> Y2(x,y)
+1 1 S(xyz) --> Y3a(x,y,z)
+1 1 S(xyz) --> Y3b(x,y,z)
+1 1 S(xyz) --> Y3c(x,y,z)
+Y3a(ax,y,z) --> X(a,x,y,z)
+Y3b(a,xy,z) --> X(a,x,y,z)
+Y3c(a,x,yz) --> X(a,x,y,z)
+Y2(ax,yz) --> X(a,x,y,z)
+1 1 X(a,x,y,z) --> X(a,x,y) D(z)
+1 1 X(x,y,z) --> X(x,y) C(z)
+1 1 X(x,y) --> A(x) B(y)
+1 1 A(a) --> eps
+1 1 B(b) --> eps
+1 1 C(c) --> eps
+1 1 D(d) --> eps

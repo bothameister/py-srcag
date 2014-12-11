@@ -1,0 +1,7 @@
+1 1 S(xzy) --> X(x,y) X(z) # grammar tests single parent range involving gapped rule and gapped parent splitting in the trivial way
+X(x,y) --> A(x) B(y) # test yield: S(a b c) ( X(a,c) (A(a) B(c)) X(b) (A(b)) )
+1 1 X(x) --> A(x)
+1 1 A(a) --> eps
+1 1 A(b) --> eps
+1 1 B(b) --> eps
+1 1 B(c) --> eps

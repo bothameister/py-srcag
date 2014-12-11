@@ -1,0 +1,6 @@
+1 1 S(xz) --> Xprime(x) C(z) # grammar tests handling of adjacent tokens as separate ranges and concating them into a single LHS arg
+1 1 Xprime(xy) --> X(x,y)
+X(x,y) --> A(x) B(y) # test yield: S(a b c) ( X(a,b) ( A(a) B(b)  ) )    C (c)
+1 1 A(a) --> eps
+1 1 B(b) --> eps
+1 1 C(c) --> eps
